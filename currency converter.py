@@ -1,10 +1,10 @@
 import requests
 
 def convert_currency(amount, from_currency, to_currency):
-    url = f"https://open.er-api.com/v6/latest/USD"
+    url = f"https://open.er-api.com/v6/latest/{from_currency}"
     try:
         response = requests.get(url, timeout=10)
-        response.raise_for_status()  # ถ้ามี error เช่น 404/500 จะ throw error
+        response.raise_for_status()
         data = response.json()
         
         if "rates" in data and to_currency in data["rates"]:
