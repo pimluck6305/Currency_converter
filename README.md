@@ -125,4 +125,6 @@ colab sprint2 : https://colab.research.google.com/drive/1Hgez5oo28V4-to8jyYlysJj
   - Test convert_currency ทำหน้าที่ แปลงค่าเงิน จาก amount + from_currency → to_currency
   - Test swap_currency ทำหน้าที่ สลับค่าเงิน จาก/ไปยัง
 
+link test : https://github.com/pimluck6305/Currency_converter/blob/main/test_final_currency_converter.py
+
 --- 
