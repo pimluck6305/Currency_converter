@@ -101,9 +101,11 @@ colab sprint2 : https://colab.research.google.com/drive/1Hgez5oo28V4-to8jyYlysJj
 
 #  รายงานความก้าวหน้า Sprint final
 
-## แผนการทำงานSprint final
+## แผนการทำงานSprint final(จากcomment)
 
-* ทำหน้า UI ให้มีความน่าใช้มากขึ้น ,ดีไซน์สวยขึ้น
+* ทำหน้า UI ให้มีความใช้ง่ายมากขึ้น
+* ทำ uniittest
+* ทำการ deployment
 
 ## บทบาทและหน้าที่sprint final
 * แมน (Planner)
@@ -117,6 +119,10 @@ colab sprint2 : https://colab.research.google.com/drive/1Hgez5oo28V4-to8jyYlysJj
 
 ## ผลลัพธ์การทำงานsprint final
 
-* ...
+* มีหน้าUIที่สามารถใช้งานได้ง่ายขึ้น
+* ได้ทำ unit testที่สำคัญ
+  - Test load_currencies ทำหน้าที่ ดึงรายชื่อสกุลเงินจาก API และมี fallback เป็น default ถ้า API ล่ม
+  - Test convert_currency ทำหน้าที่ แปลงค่าเงิน จาก amount + from_currency → to_currency
+  - Test swap_currency ทำหน้าที่ สลับค่าเงิน จาก/ไปยัง
 
 --- 
