@@ -125,6 +125,13 @@ colab sprint2 : https://colab.research.google.com/drive/1Hgez5oo28V4-to8jyYlysJj
   - Test convert_currency ทำหน้าที่ แปลงค่าเงิน จาก amount + from_currency → to_currency
   - Test swap_currency ทำหน้าที่ สลับค่าเงิน จาก/ไปยัง
 
+## TEST CASES
+* Test load_currencies() ฟังก์ชัน load_currencies() ทำหน้าที่ ดึงรายชื่อสกุลเงินจาก API และมี fallback เป็น default ถ้า API ล่ม
+  - test_load_currencies_success
+    - Mock API ให้ตอบกลับ "rates": {"THB": 35, "EUR": 0.9}
+    - ตรวจสอบว่าฟังก์ชัน return list สกุลเงินเรียงแล้ว → ["EUR", "THB"]
+    - ✅ Test นี้ตรวจสอบว่า โหลดสกุลเงินสำเร็จ
+
 link test : https://github.com/pimluck6305/Currency_converter/blob/main/test_final_currency_converter.py
 
 --- 
