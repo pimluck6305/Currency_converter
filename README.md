@@ -163,9 +163,9 @@ colab sprint2 : https://colab.research.google.com/drive/1Hgez5oo28V4-to8jyYlysJj
     - เรียก swap_currency() → ตรวจสอบว่าค่า สลับกันถูกต้อง
     - ✅ Test นี้ตรวจสอบ logic การสลับค่าเงิน
 
-load_currencies() → test การโหลดสกุลเงิน + fallback
-convert_currency() → test การคำนวณ + handle input ผิดพลาด + API ผิดพลาด
-swap_currency() → test การสลับค่าเงิน
+- load_currencies() → test การโหลดสกุลเงิน + fallback
+- convert_currency() → test การคำนวณ + handle input ผิดพลาด + API ผิดพลาด
+- swap_currency() → test การสลับค่าเงิน
 
 link test : https://github.com/pimluck6305/Currency_converter/blob/main/test_final_currency_converter.py
 
