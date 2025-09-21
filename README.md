@@ -127,38 +127,38 @@ colab sprint2 : https://colab.research.google.com/drive/1Hgez5oo28V4-to8jyYlysJj
 
 ## TEST CASES
 * Test load_currencies() ฟังก์ชัน load_currencies() ทำหน้าที่ ดึงรายชื่อสกุลเงินจาก API และมี fallback เป็น default ถ้า API ล่ม
-  1. test_load_currencies_success
+  - test_load_currencies_success(1)
     - Mock API ให้ตอบกลับ "rates": {"THB": 35, "EUR": 0.9}
     - ตรวจสอบว่าฟังก์ชัน return list สกุลเงินเรียงแล้ว → ["EUR", "THB"]
     - ✅ Test นี้ตรวจสอบว่า โหลดสกุลเงินสำเร็จ
-  2. test_load_currencies_no_rates
+  - test_load_currencies_no_rates(2)
     - Mock API ให้ไม่มี "rates" (เช่น API ตอบ JSON ผิดรูปแบบ)
     - ฟังก์ชันต้อง fallback → return default ["USD","THB","EUR","JPY"]
     - ✅ Test นี้ตรวจสอบ กรณี API ไม่ตอบ rates
-  3. test_load_currencies_api_error
+  - test_load_currencies_api_error(3)
     - Mock API ให้ raise Exception ("API error")
     - ใช้ patch("builtins.print") เพื่อซ่อน log ❌ โหลดสกุลเงินไม่สำเร็จ
     - ฟังก์ชันต้อง fallback → return default
     - ✅ Test นี้ตรวจสอบ กรณี API ล่ม / network error
 
 * Test convert_currency() ฟังก์ชัน convert_currency() ทำหน้าที่ แปลงค่าเงิน จาก amount + from_currency → to_currency
-  4. test_convert_currency_success
+  - test_convert_currency_success(4)
     - Mock input: 100 USD → THB
     - Mock API: 1 USD = 35 THB
     - Mock text_result widget เพื่อไม่ต้องสร้าง GUI จริง
     - ตรวจสอบว่า insert ข้อความผลลัพธ์ถูกต้อง → "3,500.00"
     - ✅ Test นี้ตรวจสอบ การคำนวณสำเร็จ
-  5. test_convert_currency_missing_input
+  - test_convert_currency_missing_input(5)
     - Mock input: amount / from / to ว่าง
     - ตรวจสอบว่า เรียก messagebox.showwarning
     - ✅ Test นี้ตรวจสอบ กรณีกรอกข้อมูลไม่ครบ
-  6. test_convert_currency_no_rates
+  - test_convert_currency_no_rates(6)
     - Mock API: ไม่มี "rates"
     - ตรวจสอบว่า เรียก messagebox.showerror
     - ✅ Test นี้ตรวจสอบ กรณี API ล้มเหลวหรือไม่มีอัตราแลกเปลี่ยน
       
 * Test swap_currency() ฟังก์ชัน swap_currency() ทำหน้าที่ สลับค่าเงินจาก/ไปยัง
-  7. test_swap_currency()
+  - test_swap_currency(7)
     - Mock combo_from = "USD", combo_to = "THB"
     - เรียก swap_currency() → ตรวจสอบว่าค่า สลับกันถูกต้อง
     - ✅ Test นี้ตรวจสอบ logic การสลับค่าเงิน
