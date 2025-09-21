@@ -173,7 +173,8 @@ colab sprint2 : https://colab.research.google.com/drive/1Hgez5oo28V4-to8jyYlysJj
 
 link test : https://github.com/pimluck6305/Currency_converter/blob/main/test_final_currency_converter.py
 
-เมื่อRUNโค้ดtestได้result ดังนีั้...
+เมื่อRUNโค้ดtest caese ได้result ดังนี้...
+
 <img width="256" height="72" alt="image" src="https://github.com/user-attachments/assets/0fd81731-73c3-4519-9bf9-f71ff4947f2e" />
 
 --- 
