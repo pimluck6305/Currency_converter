@@ -83,7 +83,7 @@ colab sprint2 : https://colab.research.google.com/drive/1Hgez5oo28V4-to8jyYlysJj
 * ใบยอ (Planner)
   - เลือก API ที่จะใช้งาน
   - ประสานการทดสอบระบบจริง 
-* พลอย,แมน (Coder)
+* พลอย,ใบยอ (Coder)
   - เขียนโค้ดเชื่อมต่อ API (request/response parsing, mapping ของสกุลเงิน)
   - ปรับรูปแบบการแสดงผล (ทศนิยม, สัญลักษณ์สกุลเงิน, localize)
   - เพิ่ม automated tests ที่ mock API และ integration tests ที่เรียก API จริง (ถ้าเป็นไปได้)
