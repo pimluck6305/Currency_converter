@@ -1,7 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
 
-# แก้ import ให้ถูกต้อง (ไม่ต้องใส่ .py)
 import final_currency_converter as cc   # type: ignore
 
 class TestCurrencyConverter(unittest.TestCase):
@@ -115,4 +114,5 @@ class TestCurrencyConverter(unittest.TestCase):
 
 
 if __name__ == "__main__":
+
     unittest.main()
