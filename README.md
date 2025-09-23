@@ -120,8 +120,8 @@ colab sprint2 : https://colab.research.google.com/drive/1Hgez5oo28V4-to8jyYlysJj
 ## ผลลัพธ์การทำงานsprint final
 
 * มีหน้าUIที่สามารถใช้งานได้ง่ายขึ้น
-  
-  <img width="627" height="415" alt="image" src="https://github.com/user-attachments/assets/d4b9a5d2-756f-4432-b4c3-0ed286fc94fd" />
+  <img width="627" height="415" alt="image" src="https://github.com/user-attachments/assets/2cae2f64-f7fb-4d39-8c35-31e4ef2a9014" />
+
 
 * ได้ทำ unit testที่สำคัญ
   - Test load_currencies ทำหน้าที่ ดึงรายชื่อสกุลเงินจาก API และมี fallback เป็น default ถ้า API ล่ม
